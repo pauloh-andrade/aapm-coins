@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./style/main.css">
+    <link rel="stylesheet" type="text/css" href="./style/button.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400;1,500&display=swap" rel="stylesheet">
@@ -22,22 +23,331 @@
                     <li class="menu-item">Loja</li>
                 </ul>
             </nav>
-            <div id="balance">
-
+            <div id="balance" class="center-row">
+                <p>300</p>
+                <img src="./img/coin-icon.svg">
             </div>
             <div id="menu-dropdown">
-                
-
+                <img src="./img/perfil.jpg">
             </div>
         </div>
     </header>
     <main>
-        <section></section>
-        <section></section>
-        <section></section>
-    </mian>
+        <section id="banner-register" class="center-row">
+            <div class="limiter center-row">
+                <div id="container-register" class="center-column">
+                    <div id="container-title">
+                        <p class="title">Acumule pontos e troque por <span class="font-destaque">Recompensas</span></p>
+                    </div>
+                    <div id="container-btn-register">
+                        <button type="button" class="button">Cadastre-se Agora</button><br>
+                        <p class="link">Já tem uma conta? Faça Login</p>
+                    </div>
+                </div>
+                <div id="container-banner">
+                    <img src="./img/cadastro.svg">
+                </div>
+            </div>
+        </section>
+        <section id="como-funciona" class="center-row">
+            <div class="limiter">
+                <div class="container-title title-como-funciona">
+                    <p class="title">Como funciona</p>
+                </div>
+                <div id="container-como-funciona">
+                    <div id="passo-a-passo" class="center-row">
+                        <div class="card-como-funciona">
+                            <img src="./img/cadastrese.svg">
+                            <div class="desc-card">
+                                <h1 class="white">Cadastre-se</h1>
+                                <p class="white">
+                                    Utilize seu RA para se cadastrar em nosso site
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="hr-como-funciona"></div>
+                        <div class="card-como-funciona">
+                            <img src="./img/participe.svg">
+                            <div class="desc-card">
+                                <h1 class="white">Participe</h1>
+                                <p class="white">
+                                    Participe de atividades e ganhe pontos
+                                </p>
+                            </div>
+                        </div>
+                        <div class="hr-como-funciona"></div>
+                        <div class="card-como-funciona">
+                            <img src="./img/ganhe.svg">
+                            <div class="desc-card">
+                                <h1 class="white">Ganhe recompensas</h1>
+                                <p class="white">
+                                    Troque seus pontos por recomensas no site
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="produtos">
+            <div class="limiter">
+                <div id="container-busca" class="center-row">
+                    <div class="busca">
+                        <img src="./img/search.svg" class="img-search">
+                        <p>Pesquisar ...</p>
+                        <input type="text" class="campo-pesquisa">
+                    </div>
+                    <div class="container-paginas center-row">
+                        <div class="arrow center-row"><img src="./img/left-arrow.svg"></div>
+                        <input type="text" value="1" class="numero-pagina" maxlength="1">
+                        <p>/27</p>
+                        <div class="arrow center-row"><img src="./img/right-arrow.png"></div>
+                    </div>
+                </div>
+                <div id="container-produtos">
+                    <div id="container-filtros">
+                        <div class="item-filtro">
+                            <p>Preço</p>
+                            <div class="sub-item-filtro center-row">
+                                <input type="range" min="10" max="1000">
+                                
+                            </div>
+                            
+                        </div>
+                        <div class="item-filtro">
+                            <p>Ordenar</p>
+                            <div class="sub-item-filtro">
+                                <div class="filtro"><input type="radio"><p>Menor Preço</p></div>
+                                <div class="filtro"><input type="radio"><p>Maior Preço</p></div>
+                                <div class="filtro"><input type="radio"><p>Popular</p></div>
+                            </div>
+                        </div>
+                        <div class="item-filtro">
+                            <p>Categorias</p>
+                            <div class="sub-item-filtro">
+                                <div class="filtro"><input type="checkbox"><p>Ferramentas</p></div>
+                                <div class="filtro"><input type="checkbox"><p>Acessórios</p></div>
+                                <div class="filtro"><input type="checkbox"><p>Uniforme</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="container-card-produto">
+                        <div class="card-produto">
+                            <div class="img-card">
+                                <img src="./img/fone.svg">
+                            </div>
+                            <div  class="titulo-card ">
+                                <div class="nome-produto center-row">
+                                    <h1>Headphone</h1>
+                                    <div class="hr-produto"></div>
+                                    <p>(20 em estoque)</p>
+                                </div>
+                                <div class="price center-row">
+                                    <img src="./img/coin-icon.svg">
+                                    <p>200</p>
+                                </div>
+                            </div>
+                            <div class="desc-card-produto">
+                                <p>Fone de ouvido que serve para o ouvido
+                                </p>
+                                <div class="btn-produto center-row">Saiba mais</div>
+                            </div>
+                        </div>
+                        <div class="card-produto">
+                            <div class="img-card">
+                                <img src="./img/fone.svg">
+                            </div>
+                            <div  class="titulo-card ">
+                                <div class="nome-produto center-row">
+                                    <h1>Headphone</h1>
+                                    <div class="hr-produto"></div>
+                                    <p>(20 em estoque)</p>
+                                </div>
+                                <div class="price center-row">
+                                    <img src="./img/coin-icon.svg">
+                                    <p>200</p>
+                                </div>
+                            </div>
+                            <div class="desc-card-produto">
+                                <p>Fone de ouvido que serve para o ouvido
+                                </p>
+                                <div class="btn-produto center-row">Saiba mais</div>
+                            </div>
+                        </div>
+                        <div class="card-produto">
+                            <div class="img-card">
+                                <img src="./img/fone.svg">
+                            </div>
+                            <div  class="titulo-card ">
+                                <div class="nome-produto center-row">
+                                    <h1>Headphone</h1>
+                                    <div class="hr-produto"></div>
+                                    <p>(20 em estoque)</p>
+                                </div>
+                                <div class="price center-row">
+                                    <img src="./img/coin-icon.svg">
+                                    <p>200</p>
+                                </div>
+                            </div>
+                            <div class="desc-card-produto">
+                                <p>Fone de ouvido que serve para o ouvido
+                                </p>
+                                <div class="btn-produto center-row">Saiba mais</div>
+                            </div>
+                        </div>
+                        <div class="card-produto">
+                            <div class="img-card">
+                                <img src="./img/fone.svg">
+                            </div>
+                            <div  class="titulo-card ">
+                                <div class="nome-produto center-row">
+                                    <h1>Headphone</h1>
+                                    <div class="hr-produto"></div>
+                                    <p>(20 em estoque)</p>
+                                </div>
+                                <div class="price center-row">
+                                    <img src="./img/coin-icon.svg">
+                                    <p>200</p>
+                                </div>
+                            </div>
+                            <div class="desc-card-produto">
+                                <p>Fone de ouvido que serve para o ouvido
+                                </p>
+                                <div class="btn-produto center-row">Saiba mais</div>
+                            </div>
+                        </div>
+                        <div class="card-produto">
+                            <div class="img-card">
+                                <img src="./img/fone.svg">
+                            </div>
+                            <div  class="titulo-card ">
+                                <div class="nome-produto center-row">
+                                    <h1>Headphone</h1>
+                                    <div class="hr-produto"></div>
+                                    <p>(20 em estoque)</p>
+                                </div>
+                                <div class="price center-row">
+                                    <img src="./img/coin-icon.svg">
+                                    <p>200</p>
+                                </div>
+                            </div>
+                            <div class="desc-card-produto">
+                                <p>Fone de ouvido que serve para o ouvido
+                                </p>
+                                <div class="btn-produto center-row">Saiba mais</div>
+                            </div>
+                        </div>
+                        <div class="card-produto">
+                            <div class="img-card">
+                                <img src="./img/fone.svg">
+                            </div>
+                            <div  class="titulo-card ">
+                                <div class="nome-produto center-row">
+                                    <h1>Headphone</h1>
+                                    <div class="hr-produto"></div>
+                                    <p>(20 em estoque)</p>
+                                </div>
+                                <div class="price center-row">
+                                    <img src="./img/coin-icon.svg">
+                                    <p>200</p>
+                                </div>
+                            </div>
+                            <div class="desc-card-produto">
+                                <p>Fone de ouvido que serve para o ouvido
+                                </p>
+                                <div class="btn-produto center-row">Saiba mais</div>
+                            </div>
+                        </div>
+                        <div class="card-produto">
+                            <div class="img-card">
+                                <img src="./img/fone.svg">
+                            </div>
+                            <div  class="titulo-card ">
+                                <div class="nome-produto center-row">
+                                    <h1>Headphone</h1>
+                                    <div class="hr-produto"></div>
+                                    <p>(20 em estoque)</p>
+                                </div>
+                                <div class="price center-row">
+                                    <img src="./img/coin-icon.svg">
+                                    <p>200</p>
+                                </div>
+                            </div>
+                            <div class="desc-card-produto">
+                                <p>Fone de ouvido que serve para o ouvido
+                                </p>
+                                <div class="btn-produto center-row">Saiba mais</div>
+                            </div>
+                        </div>
+                        <div class="card-produto">
+                            <div class="img-card">
+                                <img src="./img/fone.svg">
+                            </div>
+                            <div  class="titulo-card ">
+                                <div class="nome-produto center-row">
+                                    <h1>Headphone</h1>
+                                    <div class="hr-produto"></div>
+                                    <p>(20 em estoque)</p>
+                                </div>
+                                <div class="price center-row">
+                                    <img src="./img/coin-icon.svg">
+                                    <p>200</p>
+                                </div>
+                            </div>
+                            <div class="desc-card-produto">
+                                <p>Fone de ouvido que serve para o ouvido
+                                </p>
+                                <div class="btn-produto center-row">Saiba mais</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer>
-
+        <div class="limiter flex-row">
+            <div class="logo-senai">
+                <img src="./img/senai.svg">
+                <p>Copyright © 2021 | SENAI Jandira
+                </p>
+            </div>
+            <div class="container-menu-footer center-row">
+                <ul>
+                    <li class="titulo-footer">Seções</li>
+                    <ul>
+                        <li class="footer-item">
+                            Home
+                        </li>
+                        <li class="footer-item">
+                            Sobre
+                        </li>
+                        <li class="footer-item">
+                            Loja
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="container-menu-footer center-row">
+                <ul>
+                    <li class="titulo-footer">Troca</li>
+                    <ul>
+                        <li class="footer-item">
+                            Meus pedidos
+                        </li>
+                        <li class="footer-item">
+                            Extrato da conta
+                        </li>
+                        <li class="footer-item">
+                            ajuda
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+            
+            <img id="img-footer" src="./img/group.png">
+        </div>
     </footer>
 </body>
 </html>

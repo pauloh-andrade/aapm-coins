@@ -1,0 +1,19 @@
+.button{
+    border-style: none;
+    border-radius: 40px;
+    width: 400px;
+    height: 70px;
+    padding: 6px 12px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    transition: box-shadow .4s ease;
+    background-color: #5C7AEA;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+
+.button:hover{
+    box-shadow: inset 400px 0 7px rgba(0, 0, 0, .2);
+}
